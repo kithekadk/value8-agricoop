@@ -1,0 +1,57 @@
+<nav
+  class="navbar navbar-expand-lg shadow-lg p-3 text-light navbar-dark rounded"
+  style="background-color: #202021"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img
+        src="../../assets/bg1.png"
+        alt=""
+        width="35"
+        height="35"
+        class="d-inline-block align-text-top img-fluid"
+      />
+
+      <span style="color: #fff; font-size: 30px;" class=""> Agri</span>
+      <span style="color: #5bc43b; font-size: 30px;" class="fw-bold">Coop</span>
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul
+        class="navbar-nav mx-auto mb-2 mb-lg-0"
+        style="font-size: 18px; font-weight: 500"
+      >
+        <li class="nav-item">
+          <a class="nav-link" routerLink="" routerLinkActive="active" href="#">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            routerLink="/allproducts"
+            routerLinkActive="active"
+          >
+            Product
+          </a>
+        </li>
+      </ul>
+
+      <div class="d-flex nav-item">
+        <div routerLink="/cart">
+          <i
+            (click)="toCart()"
+            style="font-size: 30px; color: white"
+            class="fas fa-cart-plus"
+          ></i>
+          <i
+            class="badge bg-danger"
+            style="background-color: red; padding: 0px 3px"
+          >
+            <strong>{{ totalItems }}</strong></i
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

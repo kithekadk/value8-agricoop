@@ -1,0 +1,147 @@
+
+.banner {
+   width: 100%;
+   background-size: cover;
+   padding: 130px 0;
+   align-items: center;
+   background-image: url("https://media.istockphoto.com/id/1373228664/photo/shot-of-an-unrecognisable-woman-using-a-digital-tablet-while-working-on-a-farm.jpg?b=1&s=170667a&w=0&k=20&c=EZnVMy1mGic9E_Z2EWvH18RHTlJrmeQPhZDqstThjH8=");
+   height: 90vh;
+   text-align: center;
+   color: #202021;
+}
+
+
+.header h4 {
+   margin-top: 3%;
+   color: black;
+   font-size: 20px;
+   font-weight: 400;
+   text-transform: capitalize;
+   letter-spacing: 0.00714em;
+} 
+
+.contactus {
+    color: #fff;
+    /* background-image: url(../../assets/slider-4.jpg); */
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.contactus form input {
+    background-color: transparent;
+    color: #fff;
+}
+
+.contactus form textarea {
+    background-color: transparent;
+    color: #fff;
+}
+#category{
+    padding-top: 60px;
+    /* background-color: white; */
+}
+.category-container{
+    padding:5px 20px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dispCategory{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    gap:10px;
+}
+.cards{
+    background-color: white;
+    padding:20px;
+    color:black;
+    border-radius: 10px;
+    border: solid 1px #191341;
+}
+
+.about_section {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #fff;
+    color: #202021;
+    padding: 55px 0;
+}
+
+.about_section .section_heading h4 {
+    background-color: #202021;
+    color: #5BC43B;
+    display: inline-block;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 3px;
+}
+
+.about_section .section_heading h2 {
+    background-color: #5BC43B;
+    display: inline-block;
+    padding: 22px 15px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 23px;
+    
+}
+
+.about_b h3 {
+    text-transform: uppercase;
+}
+
+.why_info i {
+    color: #5BC43B;
+    margin-right: 10px;
+}
+
+.about_image {
+    /* background-image: url('../../assets/NFT_1.png'); */
+    background-repeat: no-repeat;
+    background-position: right center;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 30px;
+    top: 30px;
+    position: absolute;
+    z-index: -1;
+}
+.contactus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+input, textarea{
+    padding: 5px;
+}
+
+.cards2{
+    background-color: white;
+    color:black;
+    border-radius: 10px;
+    padding:0px 150px; 
+}

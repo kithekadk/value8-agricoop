@@ -1,0 +1,1 @@
+CREATE TABLE FARMERREQUESTS (requestCreator VARCHAR(200) NOT NULL, productName VARCHAR(200) NOT NULL, productPrice INT NOT NULL,productQuantity INT NOT NULL,productCategory VARCHAR(200) NOT NULL, productUrl VARCHAR(200) NOT NULL)

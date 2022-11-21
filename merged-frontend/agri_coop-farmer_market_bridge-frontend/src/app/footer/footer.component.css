@@ -1,0 +1,65 @@
+.widget_section {
+    background-image: url(../../assets/widget-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.widget_wrapper h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.widget_wrapper p {
+    color: #bbb;
+}
+
+.widget_wrapper .footer_social {
+    display: block;
+}
+
+.widget_wrapper .footer_social li {
+    display: inline-block;
+}
+
+.widget_wrapper .footer_social li a {
+    color: #fff;
+    font-size: 17px;
+    margin-right: 20px;
+}
+
+.widget_wrapper .footer_social li a:hover {
+    color: #5BC43B;
+    font-size: 18px;
+}
+
+.widget_wrapper .widget_links li a {
+    font-size: 12px;
+    color: #bbb;
+    text-transform: uppercase;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.widget_wrapper .widget_links li a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+.footer {
+    display: block;
+    background-color: #0c1525;
+    padding: 15px 0;
+}
+
+.footer .copyright {
+    font-size: 13px;
+    color: #ddd;
+    text-transform: uppercase;
+    text-align: center;
+}

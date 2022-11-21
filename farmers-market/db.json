@@ -1,0 +1,38 @@
+{
+  "requests": [
+    { 
+      "category": "cereals",
+      "Product_name": "maize",
+      "quantity": "200kg",
+      "price": "50"
+    },
+    { 
+      "category": "legumes",
+      "Product_name": "beans",
+      "quantity": "200kg",
+      "price": "50"
+    },
+    { 
+      "category": "cereals",
+      "Product_name": "sorghum",
+      "quantity": "200kg",
+      "price": "50"
+    },
+    { 
+      "category": "legumes",
+      "Product_name": "peas",
+      "quantity": "200kg",
+      "price": "50"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

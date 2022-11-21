@@ -1,0 +1,52 @@
+#category{
+    padding-top: 20px;
+    background-color: white;
+}
+.category-container{
+    padding:5px 20px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dispCategory{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    gap:10px;
+}
+.cards{
+    background-color: white;
+    padding:20px;
+    color:black;
+    border-radius: 10px;
+    border: solid 1px #191341;
+}
+.btn{
+    width:10vw;
+    height:30px;
+}
+.btn-primary{
+    color:black;
+    border:none;
+}
+.btn-primary:hover{
+    cursor: pointer;
+    width:11vw;
+    height:32px;
+    background-color: #aeaac7;
+    border: none;
+}
+
+input[type="text"]{
+    padding:5px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+}

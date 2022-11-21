@@ -1,0 +1,31 @@
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+input[type="text"]{
+    padding:5px;
+}
+.cards{
+    text-align: left;
+    border: 1px gray solid;
+    box-shadow: 1px 3px 3px 1px gray;
+    width:32vw;
+    border-radius: 5px;
+    margin-bottom: 2vh;
+}
+
+th{
+    padding: 5px;
+}
+
+button[type="submit"]{
+    padding:7px 30px;
+    margin:5px 0px;
+    background-color:green;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+}

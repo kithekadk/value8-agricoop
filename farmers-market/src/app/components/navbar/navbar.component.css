@@ -1,0 +1,16 @@
+.navbar-nav{
+    display: flex;
+    gap:100px;
+}
+a:hover{
+    color:green;
+}
+
+.regbtn{
+    margin-left:200px;
+    color:black;
+    padding:10px;
+    background-color: green;
+    border-radius: 10px;
+    border:none
+}

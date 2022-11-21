@@ -1,0 +1,165 @@
+<app-navbar></app-navbar>
+
+<hr style="margin-top:-1px;">
+<div class="register" style="border-bottom: 1px solid black ;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-6">
+      </div>
+       <div class=" col-md-6 col-sm-6">
+          <div class="text-center mt-2">
+            <h2>Sign Up</h2>
+          </div>
+          <div class="form mt-1">
+            <form  class="mt-5">
+              <div class="row">
+
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-group mb-2" [class.error]="SignupForm.controls['firstName'].dirty &&
+                   SignupForm.hasError('required','firstName')">
+                    <label for="name">First Name</label>
+                    <br>
+                    <input class="form-control"
+                     type="text" 
+                     formControlName="firstName" 
+                     required>
+                  </div>
+                  <small *ngIf="SignupForm.controls['firstName'].dirty &&
+                     SignupForm.hasError('required','firstName')" class="text-danger">First Name is required</small>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-group mb-2" [class.error]="SignupForm.controls['lastName'].dirty &&
+                   SignupForm.hasError('required','lastName')">
+
+                    <label for="name">Last Name</label>
+                    <br>
+                    <input 
+                    class="form-control" 
+                    type="text" 
+                    formControlName="lastName" 
+                    required>
+                  </div>
+                  <small *ngIf="SignupForm.controls['lastName'].dirty &&
+                   SignupForm.hasError('required','lastName')" class="text-danger">Last Name is required</small>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-group mb-2" [class.error]="SignupForm.controls['email'].dirty && 
+                  SignupForm.hasError('required','email')">
+
+                    <label for="Email">Email</label>
+                    <br>
+                    <input 
+                     class="form-control"
+                     type="email"
+                     formControlName="email"
+                     required>
+                  </div>
+                  <small *ngIf="SignupForm.controls['email'].dirty && 
+                    SignupForm.hasError('required','email')" class="text-danger">Email is required</small>
+
+                  <small *ngIf="SignupForm.controls['email'].dirty &&
+                   SignupForm.hasError('email','email')" class="text-danger">Input Email Format</small>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-group mb-2" [class.error]="SignupForm.controls['mobile'].dirty &&
+                   SignupForm.hasError('required','mobile')">
+                    <label for="Mobile">Phone No.</label>
+                    <br>
+                    <input 
+                    class="form-control" 
+                    type="tel"
+                    formControlName="mobile" ng2telInput
+                     required>
+                  </div>
+                  <small *ngIf="SignupForm.controls['mobile'].dirty &&
+                 SignupForm.hasError('required','mobile')" 
+                 class="text-danger">Mobile Number Required </small>
+
+                  <small *ngIf="SignupForm.controls['mobile'].dirty && 
+                SignupForm.hasError('pattern','mobile')" 
+                class="text-danger">Include Your Country Code
+                  </small>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-group mt-3" [class.error]="SignupForm.controls['password'].dirty &&
+                   SignupForm.hasError('required','password')">
+                    <label for="password">Password</label>
+                    <br>
+                    <input 
+                    class="form-control" 
+                    formControlName="password" 
+                    [type]="changepass?'password':'text'"
+                    required>
+
+                    <span class="eyeicon" (click)="viewpass()">
+                      <i [ngClass]="visible?'fa-solid fa-eye':'fa-solid fa-eye-slash'"></i></span>
+                  </div>
+                  <small *ngIf="SignupForm.controls['password'].dirty && 
+                  SignupForm.hasError('required','password')" class="text-danger">Password is required</small>
+
+                  <small *ngIf="SignupForm.controls['password'].dirty && 
+                  SignupForm.hasError('minlength','password')" class="text-danger">Password Must be atleast 8.</small>
+
+                  <small *ngIf="SignupForm.controls['password'].dirty && 
+                  SignupForm.hasError('maxlength','password')" class="text-danger">Password Must be atmost 16.</small>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-group mt-3" [class.error]="SignupForm.controls['Cpassword'].dirty && 
+                  SignupForm.hasError('required','Cpassword')">
+
+                    <label for="password">Confirm Password</label>
+                    <br>
+                    <input 
+                      class="form-control" 
+                      formControlName="Cpassword" 
+                      [type]="changepass?'password':'text'"
+                      required>
+
+                    <span class="eyeicon" (click)="viewpass()">
+                      <i [ngClass]="visible?'fa-solid fa-eye':'fa-solid fa-eye-slash'"></i></span>
+                  </div>
+                  <small *ngIf="SignupForm.controls['Cpassword'].dirty && 
+                  SignupForm.hasError('required','Cpassword')" class="text-danger">Cornfirm Password is
+                    required</small>
+a
+                  <small *ngIf="SignupForm.controls['Cpassword'].dirty && 
+                  SignupForm.hasError('MatchPass','Cpassword')" class="text-danger">Password did not Match</small>
+                </div>
+              </div>
+
+              <div class="text-center mt-5">
+                <input class="" type="checkbox" name="remember" id="remember">
+                <span class="p-1">I agree with the Term of Use</span>
+              </div>
+              <button type="submit" (click)="Signup()" class="auth btn btn-lg mt-2 text-center">Sign In</button>
+
+              <div class="mt-2 text-center">
+                <p> Or Sign In With</p>
+              </div>
+              <div class="Social-account text-center p-2">
+                <span><a href="#"><i class="fa fa-google"></i></a></span>
+                <span><a href="#"><i class="fa fa-facebook"></i></a></span>
+                <span><a href="#"><i class="fa fa-instagram"></i></a></span>
+              </div>
+              <div class="mt-2 text-center">
+                <p> <a routerLink="/login"  style="text-decoration: none; color: #202021;">Already have an account?
+                    <span style="color:#5BC43B; padding: 5px; ">Sign Up</span></a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+        <br><br>
+      </div>
+    </div>
+</div>

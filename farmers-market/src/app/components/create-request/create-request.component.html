@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+
+<div class="addProductDiv container">
+    <h2>CREATE REQUEST</h2>
+    <div>
+        <form [formGroup]="form" (ngSubmit)="createRequest()">
+            <div>
+                <label for="requestCreator">Sellers Phone No.</label><br>
+                <input type="text" formControlName="requestCreator" id="ProductName" placeholder="Sellers phone number" class="form-control" /><br>
+            </div>
+            <div>
+                <label for="productName">Product Name</label><br>
+                <input type="text" formControlName="productName" id="Description" class="form-control" /><br>
+            </div>
+            <div>
+                <label for="Category">Category</label><br>
+                <select formControlName="productCategory">
+                    <option *ngFor="let option of Category">{{option}}</option>
+                </select>
+            </div>
+            <div>
+                <label for="productPrice">Price</label><br>
+                <input type="number" formControlName="productPrice" id="Price" placeholder="Price" class="form-control" /><br>
+            </div>
+
+            <div>
+                <label for="Image url">Image</label><br>
+                <input type="text" placeholder="Input image URL" formControlName="productUrl" id="imgurl" placeholder="image url" class="form-control" /><br>
+            </div>
+            <div>
+                <label for="productQuantity">Quantity</label><br>
+                <input type="text" formControlName="productQuantity" id="Quantity" placeholder="Quantity" class="form-control" /><br>
+            </div>
+
+            <div>
+                <button type="submit">Add Product</button>
+            </div>
+        </form>
+    </div>
+</div>

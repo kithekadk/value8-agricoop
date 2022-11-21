@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div id="category">
+    <div class="category-container" style=" padding:0px 150px;">
+        <h2 class="fw-bold mt-2 text-center"> ALL
+            <span style="color:#5BC43B; font-weight:bold;"> PRODUCTS </span>
+
+        </h2>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Input product name" [(ngModel)]="filter">
+        <button>Search</button>
+    </div>
+    <div class="dispCategory" id="dispCategory">
+        <div class="cards" *ngFor="let item of Products | search:filter">
+            <h4>{{item.productName | titlecase}}</h4>
+            <img src='{{item.productUrl}}' alt="" width="300vw" height="100vh"><br>
+            <!-- <div>Contact: {{item.requestCreator}}</div> -->
+            <div>Quantity: {{item.productQuantity}} Kg</div>
+            <div>Unit price: {{item.productPrice}} Ksh</div><br/>
+            <button class="btn btn-success" (click)="addToCart(item)">Add to cart</button><br><br>
+        </div>           
+    </div>
+</div>

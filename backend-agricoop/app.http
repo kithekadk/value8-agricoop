@@ -1,0 +1,27 @@
+POST http://localhost:5491/user/createuser
+Content-Type: application/json
+
+{
+    "firstname":"Praise",
+    "lastname":"Godwins",
+    "email":"pg@gmail.com",
+    "phonenumber":"07785785878",
+    "password":"12345678"
+}
+
+###
+POST http://localhost:5491/request/createrequest
+Content-Type: application/json
+
+{
+    "requestCreator":"user3",
+    "productName":"MAIZE",
+    "productPrice":100,
+    "productQuantity": 50,
+    "productCategory":"cereals",
+    "productUrl":"https://pixabay.com/photos/coffee-beans-coffee-roasted-1291656/"
+}
+
+###
+GET http://localhost:5491/request/getrequests
+Content-Type: application/json

@@ -1,0 +1,56 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="items">
+        <div class="table">
+            <table *ngIf="products.length;else falseBox">
+                <thead>
+                    <tr>
+                        <th>Serial no</th>
+                        <th>Product name</th>
+                        <th>Product image</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr *ngFor="let item of products; let i=index" border>
+                        <td>{{i+1}}</td>
+                        <td width="12%">{{item.productName}}</td>
+                        <td><img src="{{item.productUrl}}" width="120px" alt="IMG"></td>
+                        <td width="25%">{{item.productPrice}}</td>
+                        <td width="7%" style="text-align: center;">{{item.productQuantity}}</td>
+                        <td width="25%">{{item.productPrice}}</td>
+
+                        <button class="btn btn-outline-success btn-lg" (click)="removeItem(i)"><i style="color: red;"class="fas fa-trash-alt"></i></button>
+                    </tr>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td><button class="btn btn-danger " (click)="emptyCart()">Empty Cart</button></td>
+                        <td style="text-align: center;"><i (click)="allProducts()" style="color: green; font-size: 40px;" class="fas fa-plus-square"></i></td>
+                        <td><button class="btn btn-outline-success" style="color:black; border: black;padding:5px">Pay On Delivery</button></td>
+                        <td><b>Grand Total:</b>{{grandTotal}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<ng-template #falseBox>
+    <div class="container">
+        <div class="overall">
+            <div class="card"><h2>My Cart</h2></div>
+            <div class="center">
+                <img src="https://cdn.pixabay.com/photo/2015/11/06/11/49/shopping-cart-1026507__340.jpg" alt="">
+                <h4>Your cart is empty</h4>
+                <h6>Add item to it now</h6>
+                <div style="background-color: green; padding: 5px 20px; border: none; border-radius: 5px; color: white;" routerLink="/allproducts" >Shop Now</div>
+
+            </div>
+        </div>
+    </div>
+</ng-template>

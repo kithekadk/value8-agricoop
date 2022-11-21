@@ -1,0 +1,156 @@
+.banner {
+    width: 100%;
+    background-size: cover;
+    padding: 130px 0;
+    align-items: center;
+    background-image: url("https://media.istockphoto.com/id/934538578/photo/beautiful-asian-woman-harvest-tea-leaves-in-tea-field-in-the-morning.jpg?b=1&s=170667a&w=0&k=20&c=79yZWK-m2ucxOZTVqFPHhNpp9AydWbLXA6yKmNeDLQQ=");
+    height: 86vh;
+    text-align: center;
+    color: #202021;
+    opacity: 1;
+ }
+
+ .navbar-collapse{
+    display: flex;
+    justify-content: space-between;
+    gap:100px;
+ }
+.about_section {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #fff;
+    color: #202021;
+    padding: 55px 0;
+}
+
+.about_section .section_heading h4 {
+    background-color: #202021;
+    color: #5BC43B;
+    display: inline-block;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 3px;
+}
+
+.about_section .section_heading h2 {
+    background-color: #5BC43B;
+    display: inline-block;
+    padding: 22px 15px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 23px;
+    
+}
+
+.about_b h3 {
+    text-transform: uppercase;
+}
+
+.why_info i {
+    color: #5BC43B;
+    margin-right: 10px;
+}
+
+.mask{
+    text-align: center;
+    width:100vw;
+    height:47vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 170px 30px;
+}
+
+h1{
+    font-size: 70px;
+    color:black;
+}
+h2{
+    font-size: 50px;
+    color:black;
+}
+a{
+    text-decoration: none;
+    background-color: white;
+    padding: 13px;
+    margin:10px;
+    border-radius: 10px;
+    color:black
+}
+
+a:hover{
+    color: white;
+    background-color: rgb(121, 118, 118);
+}
+
+h2{
+    margin-left: 50px;
+}
+#category{
+    padding-top: 60px;
+    background-color: white;
+}
+.category-container{
+    padding:5px 20px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dispCategory{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    gap:10px;
+}
+.cards{
+    background-color: white;
+    padding:20px;
+    color:black;
+    border-radius: 10px;
+    border: solid 1px #191341;
+}
+.btn{
+    width:15vw;
+    height:50px;
+}
+.btn-primary{
+    background-color: black;
+    border-radius: 5px;
+    color:white;
+
+}
+.btn-primary:hover{
+    cursor: pointer;
+    width:11vw;
+    height:32px;
+    background-color: #191341;
+    border: none;
+}
+
+.contactus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+input, textarea{
+    padding: 5px;
+}
+
+.cards2{
+    background-color: white;
+    color:black;
+    border-radius: 10px;
+    padding:0px 150px; 
+}

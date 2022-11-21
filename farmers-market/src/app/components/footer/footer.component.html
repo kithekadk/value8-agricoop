@@ -1,0 +1,75 @@
+<section class="widget_section">
+    <div class="container">
+        <div class="row widget_wrapper">
+            <div class="col-lg-3 col-sm-6">
+                <a class="navbar-brand fs-2 " href="#">
+                    <img src="../../assets/bg1.png" alt="" width="50" height="50" class="d-inline-block align-text-top img-fluid"
+                      style="margin-top: -2%;">
+                    <span style="color: #fff;" class="">
+                      Agri</span>
+                    <span style="color:  #5BC43B;" class="fw-bold">Coop</span>
+                  </a>
+                <p class="mt-3">Lorem Ipsum is simply dummy the printing and typesetting industry. It has survived not
+                    only five centuries.</p>
+                <ul class="footer_social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class=" ml-2  col-lg-3 col-sm-6">
+                <h3>Company</h3>
+                <ul class="widget_links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Download App</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <h3>Informations</h3>
+                <ul class="widget_links">
+                    <li><a href="#">Help &amp; Support Center</a></li>
+                    <li><a href="#">Returens &amp; Refunds</a></li>
+                    <li><a href="#">Mobile Screenshots</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <h3>Subscribe Newslatters</h3>
+                <p>Lorem Ipsum is simply dummy the printing and industry.</p>
+                <div class="subscribe_form">
+                    <form action="#" [formGroup]="subscribeForm" class="subscribe_form">
+                        <div class="form-group mb-2"
+                            [class.error]="subscribeForm.controls['email'].dirty && subscribeForm.hasError('required','email')">
+                            <input class="form-control form_input" formControlName="email"
+                                placeholder="Email Address..." type="email" required>
+                        </div>
+                        <small *ngIf="subscribeForm.controls['email'].dirty && 
+                            subscribeForm.hasError('required','email')" class="text-danger">Email is required
+                        </small>
+                        <small *ngIf="subscribeForm.controls['email'].dirty &&
+                         subscribeForm.hasError('email','email')" class="text-danger">Input Email Format
+                        </small>
+                        <button type="reset" [disabled]="subscribeForm.invalid"
+                            (click)="subscribeMessage(subscribeForm.value)" class="button_1 text-light btn mt-1">
+                            SUBSCRIBE
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="copyright">&copy;2022
+            <span style="color:#f9b707;">AgriCoop</span>
+            All Right Reserved
+        </div>
+    </div>
+</footer>
+
